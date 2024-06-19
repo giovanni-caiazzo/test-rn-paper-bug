@@ -1,0 +1,9 @@
+static
+.expo
+node_modules
+.prettierignore
+.expo-shared
+.idea
+assets
+.gitignore
+yarn.lock
