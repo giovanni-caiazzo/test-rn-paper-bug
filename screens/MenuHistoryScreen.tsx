@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Surface, Text, useTheme} from 'react-native-paper';
-import {SectionList, StyleSheet, View} from 'react-native';
+import {SectionList, StyleSheet} from 'react-native';
 import ErrorBoundary from 'react-native-error-boundary';
 import CustomErrorBoundary from '../components/CustomErrorBoundary';
 import MenuHistoryItem from '../components/MenuHistoryItem';
@@ -1710,7 +1710,7 @@ const MenuHistoryScreen = () => {
   const [days, setDays] = useState<{title: string; data: MenuItem[]}[]>([]);
   useEffect(() => {
     if (!days || days.length === 0) {
-      setTimeout(() => setDays(const_days), 5000);
+      setTimeout(() => setDays(const_days), 500);
     }
   }, [days]);
   return (
